@@ -3,31 +3,34 @@ import configparser
 import logging
 from selenium import webdriver
 import time
+from selenium.webdriver.support.ui import WebDriverWait
+
+class Commone:
+
+    #读取配置文件
+    def get_config_values(self,section,option):
+        rootDir = os.path.split(os.path.realpath(__file__))[0]
+        configFilePath = os.path.join(rootDir, 'config.ini')
+        config = configparser.ConfigParser()
+        config.read(configFilePath)
+        return config.get(section = section ,option = option)
 
 
 
-#读取配置文件
-def get_config_values(section,option):
-    rootDir = os.path.split(os.path.realpath(__file__))[0]
-    configFilePath = os.path.join(rootDir, 'config.ini')
-    config = configparser.ConfigParser()
-    config.read(configFilePath)
-    return config.get(section = section ,option = option)
+    #保存日志
+    def log(self):
+        log_file = os.path.join(os.getcwd(), 'log/liveappapi.log')
+        log_format = '[%(asctime)s][%(name)s][%(levelname)s][%(message)s]'
+        logging.basicConfig(level=logging.DEBUG, format=log_format, filename=log_file, filemode='w')
+        console = logging.StreamHandler()
+        console.setLevel(logging.DEBUG)
+        formatter = logging.Formatter(log_format)
+        console.setFormatter(formatter)
+        logging.getLogger('').addHandler(console)
+
+class BasePage:
 
 
-
-#保存日志
-def log():
-    log_file = os.path.join(os.getcwd(), 'log/liveappapi.log')
-    log_format = '[%(asctime)s][%(name)s][%(levelname)s][%(message)s]'
-    logging.basicConfig(level=logging.DEBUG, format=log_format, filename=log_file, filemode='w')
-    console = logging.StreamHandler()
-    console.setLevel(logging.DEBUG)
-    formatter = logging.Formatter(log_format)
-    console.setFormatter(formatter)
-    logging.getLogger('').addHandler(console)
-
-class BasePage():
     def __init__(self, driver):
         self.driver = driver
 
@@ -113,40 +116,58 @@ class BasePage():
         logging.info('关闭浏览器')
 
 
+    def login(self):
+        # 初始化登录信息
+        global url, username, password, width, height
+        commone = Commone()
+        url = commone.get_config_values('info', 'url')
+        username = commone.get_config_values('info', 'username')
+        password = commone.get_config_values('info', 'password')
+        width = commone.get_config_values('info', 'width')
+        height = commone.get_config_values('info', 'height')
+        seconds = commone.get_config_values('info', 'seconds')
+        # 设置浏览器窗口
+        self.driver.set_window_size(width, height)
+        # 设置全局操作超时时间
+        self.driver.implicitly_wait(seconds)
+        # 打开网址
+        self.driver.get('http://sit-approve.qude369.com/#/user/login')
+        #driver = BasePage(dr)
+        self.type(['id', 'userName'], 'liuhong')
+        self.sleep(5)
+        self.type(['id', 'password'], '123456.com')
+        self.click(
+            ['css', '#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button'])
 
+    def scoll(self):
+        js = "var q=document.documentElement.scrollTop=100000"
+        self.driver.execute_script(js)
 
-# 运行ChromeDriver打开浏览器
-dr = webdriver.Chrome()
-# 设置浏览器窗口
-dr.set_window_size(1366, 768)
-# 设置全局操作超时时间
-dr.implicitly_wait(5)
-# 打开网址
-dr.get('http://sit-approve.qude369.com/#/user/login')
-driver = BasePage(dr)
-driver.type(['id','userName'],'liuhong')
-driver.sleep(3)
-driver.type(['id','password'],'123456.com')
-driver.click(['css','#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button'])
+    def get_options(self):
+        #//*[@id="ba991463-a0fd-413c-ec23-dcfe36882bbf"]/ul
+        #demo_div = self.driver.find_element_by_xpath("""/html/body""")
+        #print(demo_div.get_attribute('innerHTML'))
+        #print(self.driver.execute_script("return arguments", demo_div))
+        js_vul = """
+                 var body = document.getElementsByTagName('body')[0];
+                 function getChildNodes(node) {
+                    console.log(node.childNodes)
+                    if (node.hasChildNodes() && node.nodeType == 1) {
+                        for (var i = 0; i < node.childNodes.length; i++) {
+                            console.log(childNodes[i])
+                            #getChildNodes(node.childNodes[i])
+                        }
+                    }
+                 }
+                 getChildNodes(body)
+                 """
+    def button_drop(self):
 
-
-# 运行ChromeDriver打开浏览器
-dr = webdriver.Chrome()
-# 设置浏览器窗口
-dr.set_window_size(1366, 768)
-# 设置全局操作超时时间
-dr.implicitly_wait(5)
-# 打开网址
-dr.get('http://sit-approve.qude369.com/#/user/login')
-driver = BasePage(dr)
-driver.type(['id','userName'],'liuhong')
-driver.sleep(3)
-driver.type(['id','password'],'123456.com')
-driver.click(['css','#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button'])
-
-
-
-
+        self.click(['css','#maritalStatus > div > div > div'])
+        # 找到dropdown-menu父元素
+        WebDriverWait(driver,3).until(lambda driver: driver.find_element_by_css_selector('body > div:nth-child(6) > div > div').is_displayed())
+        menu = self.find_element(['text',"Unmarried"])
+        elements.click()
 
 
 
