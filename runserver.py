@@ -70,7 +70,7 @@ basePage.type(['id','antiFraudResutl'],'ok')
 #滚动下拉到底部
 #js="var q=document.documentElement.scrollTop=100000"
 #basePage.execute_script(js)
-basePage.scoll()
+basePage.scoll('10000')
 time.sleep(3)
 #反欺诈结果点击Save
 basePage.click(['css','#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > div.ant-tabs-content.ant-tabs-content-no-animated.ant-tabs-top-content.ant-tabs-card-content > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div.scrollForm > form > div.align-center > button.ant-btn.mtPercent.ant-btn-primary'])
@@ -99,7 +99,7 @@ basePage.button_drop()
 #滚动下拉到底部
 #js="var q=document.documentElement.scrollTop=100000"
 #basePage.execute_script(js)
-basePage.scoll()
+basePage.scoll('1000')
 time.sleep(3)
 #输入居住详细地址
 basePage.find_element_by_id('idAddress').send_keys('Address')

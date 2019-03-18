@@ -99,6 +99,18 @@ class BasePage:
         except BaseException:
             logging.error('点击元素报错', exc_info=1)
             self.get_img()
+    '''
+    def submit(self,selector):
+        element = self.find_element(selector)
+        try:
+            element.submit()
+            logging.info('提交信息成功')
+        except BaseException:
+            logging.info('提交信息报错',exc_info =1)
+            self.get_img()
+            
+    '''
+
 
     def sleep(self, secondes):
         '''强制暂停'''
@@ -139,8 +151,9 @@ class BasePage:
         self.click(
             ['css', '#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button'])
 
-    def scoll(self):
-        js = "var q=document.documentElement.scrollTop=100000"
+    def scoll(self,height):
+        str = "var q=document.documentElement.scrollTop="
+        js = ''.join((str,height))
         self.driver.execute_script(js)
 
     def get_options(self):
@@ -165,9 +178,9 @@ class BasePage:
 
         self.click(['css','#maritalStatus > div > div > div'])
         # 找到dropdown-menu父元素
-        WebDriverWait(driver,3).until(lambda driver: driver.find_element_by_css_selector('body > div:nth-child(6) > div > div').is_displayed())
+        WebDriverWait(self,30).until(lambda x:x.find_element(['css','body > div:nth-child(6) > div > div']).is_displayed())
         menu = self.find_element(['text',"Unmarried"])
-        elements.click()
+        menu.click()
 
 
 
