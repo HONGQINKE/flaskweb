@@ -99,7 +99,7 @@ class BasePage:
         except BaseException:
             logging.error('点击元素报错', exc_info=1)
             self.get_img()
-    '''
+
     def submit(self,selector):
         element = self.find_element(selector)
         try:
@@ -109,7 +109,7 @@ class BasePage:
             logging.info('提交信息报错',exc_info =1)
             self.get_img()
             
-    '''
+
 
 
     def sleep(self, secondes):
