@@ -1,9 +1,10 @@
-import os
+import os,sys
 import configparser
 import logging
 from selenium import webdriver
 import time
 from selenium.webdriver.support.ui import WebDriverWait
+import pymysql
 
 class Commone:
 
@@ -11,11 +12,9 @@ class Commone:
     def get_config_values(self,section,option):
         rootDir = os.path.split(os.path.realpath(__file__))[0]
         configFilePath = os.path.join(rootDir, 'config.ini')
-        config = configparser.ConfigParser()
+        config = configparser.RawConfigParser()
         config.read(configFilePath)
         return config.get(section = section ,option = option)
-
-
 
     #保存日志
     def log(self):
@@ -27,6 +26,9 @@ class Commone:
         formatter = logging.Formatter(log_format)
         console.setFormatter(formatter)
         logging.getLogger('').addHandler(console)
+
+
+
 
 class BasePage:
 
@@ -156,24 +158,6 @@ class BasePage:
         js = ''.join((str,height))
         self.driver.execute_script(js)
 
-    def get_options(self):
-        #//*[@id="ba991463-a0fd-413c-ec23-dcfe36882bbf"]/ul
-        #demo_div = self.driver.find_element_by_xpath("""/html/body""")
-        #print(demo_div.get_attribute('innerHTML'))
-        #print(self.driver.execute_script("return arguments", demo_div))
-        js_vul = """
-                 var body = document.getElementsByTagName('body')[0];
-                 function getChildNodes(node) {
-                    console.log(node.childNodes)
-                    if (node.hasChildNodes() && node.nodeType == 1) {
-                        for (var i = 0; i < node.childNodes.length; i++) {
-                            console.log(childNodes[i])
-                            #getChildNodes(node.childNodes[i])
-                        }
-                    }
-                 }
-                 getChildNodes(body)
-                 """
     def button_drop(self):
 
         self.click(['css','#maritalStatus > div > div > div'])
@@ -184,8 +168,71 @@ class BasePage:
 
 
 
+class Mysql:
+
+    commone = Commone()
+
+
+
+
+
+
+    def __init__(self):
+        pass
+
+
+    #连接数据库
+    def getConnect(self):
+        # 初始化数据
+        # phone = commone.get_config_values('info', 'phone')
+        global host,user,db,port
+        host = commone.get_config_values('mysql', 'host')
+        user = commone.get_config_values('mysql', 'mysql_uname')
+        passwd = commone.get_config_values('mysql', 'mysql_pwd')
+        db = commone.get_config_values('mysql', 'database')
+        port = int(commone.get_config_values('mysql', 'port'))
+        conn = pymysql.connect(host=host, user=user, passwd=passwd, db=db, port=port, charset='utf8')
+        return conn
+
+    #查询数据库表
+    def fetchone(self,sql):
+        db = self.getConnect()
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            data = cursor.fetchall()
+            logging.info("执行SQL：%s 查询，返回结果 %s" %(sql,data))
+            return data
+        except Exception:#采用sys模块回溯最后的异常
+            #输出异常信息
+            info = sys.exc_info()
+            print(info[0],':',info[1])
+            #如果发生异常，则回滚
+            db.rollback()
+        finally:
+            #最终关闭数据库连接
+            db.close()
+
+
+
+
 if __name__ == '__main__':
-    log()
+    commone = Commone()
+    commone.log()
+    mysql = Mysql()
+    sql = "select CODE from pub_verification_code where phone =9999990001 order by CREATE_TIME desc LIMIT 0,1"
+    data = mysql.fetchone(sql)
+    print(type(data))
+    print(data)
+    print(data[0])
+    print(data.__str__())
+    print(list(data))
+    logging.info('verification code is %s' %data)
+
+
+
+
+
 
 
 

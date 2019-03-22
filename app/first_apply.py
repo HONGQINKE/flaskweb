@@ -1,6 +1,21 @@
 import os
 import time
 from appium import webdriver
+from common import Mysql
+
+from common import Commone
+
+
+
+
+
+
+
+
+
+
+
+
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
 
 
@@ -53,15 +68,6 @@ def swipRight(t):
     driver.swipe(x1,y1,x2,y1,t)
 
 
-def logcat():
-    cmd_c = 'abd logcat -c'
-    os.popen(cmd_c)  #清除以前的日志
-    for i in range(30):   #30s没有短信日志跑出VALUE ERROR
-        try:
-            cmd_d = 'adb logcat -d | findstr codeString'
-            value = os.popen(cmd_d).read()
-            code = value.split('验证码：')[1].split(',')[0]
-
 
 
 #启动App
@@ -82,6 +88,9 @@ driver.find_element_by_id('android:id/button1').click()
 driver.find_element_by_id('com.kpt.android:id/phoneEdit').send_keys('9999990001')
 #点击登录
 driver.find_element_by_id('com.kpt.android:id/loginBtn').click()
+
+
+
 #输入验证码
 driver.find_element_by_id('com.kpt.android:id/code1Edit').send_keys()
 driver.find_element_by_id('com.kpt.android:id/code2Edit').send_keys()
