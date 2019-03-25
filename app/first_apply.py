@@ -2,20 +2,11 @@ import os
 import time
 from appium import webdriver
 from common import Mysql
-
+import logging
 from common import Commone
 
-
-
-
-
-
-
-
-
-
-
-
+commone = Commone()
+commone.log()
 PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
 
 
@@ -88,16 +79,28 @@ driver.find_element_by_id('android:id/button1').click()
 driver.find_element_by_id('com.kpt.android:id/phoneEdit').send_keys('9999990001')
 #点击登录
 driver.find_element_by_id('com.kpt.android:id/loginBtn').click()
-
-
+#连接数据库获取数据库中验证码
+mysql = Mysql()
+sql = "select CODE from pub_verification_code where phone =9999990001 order by CREATE_TIME desc LIMIT 0,1"
+# 数据库查询结果，结果类型为Tuple
+data = mysql.fetchone(sql)
+# 提取元组中的验证码值
+code = data[0][0]
+logging.info('verification code is %s' % code)
+#拆分Str类型的code为单个字符
+code_list = list(code)
+print(code_list)
 
 #输入验证码
-driver.find_element_by_id('com.kpt.android:id/code1Edit').send_keys()
-driver.find_element_by_id('com.kpt.android:id/code2Edit').send_keys()
-driver.find_element_by_id('com.kpt.android:id/code3Edit').send_keys()
-driver.find_element_by_id('com.kpt.android:id/code4Edit').send_keys()
+time.sleep(5)
+#xf = driver.find_elements_by_class_name('android.widget.EditText')
+driver.switch_to.frame(0)
+driver.find_element_by_id('com.kpt.android:id/code1Edit').send_keys(code_list[0])
+driver.find_element_by_id('com.kpt.android:id/code2Edit').send_keys(code_list[1])
+driver.find_element_by_id('com.kpt.android:id/code3Edit').send_keys(code_list[2])
+driver.find_element_by_id('com.kpt.android:id/code4Edit').send_keys(code_list[3])
 
-#退出App
+#退出
 driver.quit()
 
 

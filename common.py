@@ -186,6 +186,7 @@ class Mysql:
         # 初始化数据
         # phone = commone.get_config_values('info', 'phone')
         global host,user,db,port
+        commone = Commone()
         host = commone.get_config_values('mysql', 'host')
         user = commone.get_config_values('mysql', 'mysql_uname')
         passwd = commone.get_config_values('mysql', 'mysql_pwd')
@@ -219,15 +220,7 @@ class Mysql:
 if __name__ == '__main__':
     commone = Commone()
     commone.log()
-    mysql = Mysql()
-    sql = "select CODE from pub_verification_code where phone =9999990001 order by CREATE_TIME desc LIMIT 0,1"
-    data = mysql.fetchone(sql)
-    print(type(data))
-    print(data)
-    print(data[0])
-    print(data.__str__())
-    print(list(data))
-    logging.info('verification code is %s' %data)
+
 
 
 

@@ -1,2 +1,2 @@
-[2019-03-22 17:53:18,188][root][INFO][执行SQL：select CODE from pub_verification_code where phone =9999990001 order by CREATE_TIME desc LIMIT 0,1 查询，返回结果 (('6903',),)]
-[2019-03-22 17:53:18,188][root][INFO][verification code is ('6903',)]
+[2019-03-25 10:12:01,275][root][INFO][执行SQL：select CODE from pub_verification_code where phone =9999990001 order by CREATE_TIME desc LIMIT 0,1 查询，返回结果 (('6903',),)]
+[2019-03-25 10:12:01,275][root][INFO][verification code is 6903]
