@@ -4,6 +4,7 @@ from appium import webdriver
 from common import Mysql
 import logging
 from common import Commone
+from appium.webdriver.common.touch_action import TouchAction
 
 commone = Commone()
 commone.log()
@@ -19,6 +20,7 @@ desired_caps['deviceName'] = 'HBAXJR00K412NC9'
 #desired_caps['deviceName'] = 'albf48c'
 desired_caps['app'] = PATH('E:\package\dev-sit.20190129121419.apk')
 desired_caps['appWaitActivity'] = 'com.kpt.android.activity.StartActivity'
+#desired_caps['appActivity'] = '.MainActivity' #原生的需要加.
 #
 #desired_caps['noReset'] = 'true'
 #desired_caps['appPackage'] = 'com.kpt.andriod'
@@ -65,8 +67,10 @@ def swipRight(t):
 
 #启动App
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+time.sleep(8)
 #模拟左滑动
 swipLeft(1000)
+time.sleep(8)
 swipLeft(1000)
 #点击Mulai Coba
 driver.find_element_by_id('com.kpt.android:id/startTxt').click()
@@ -79,17 +83,21 @@ time.sleep(5)
 #确认获取手机号码，IMEI,IMSI权限
 #driver.find_element_by_id('android:id/button1').click()
 
-time.sleep(5)
+
 #华硕手机
 #确认允许手机定位
+time.sleep(3)
 driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
 #确认允许录制照片和视频
+time.sleep(3)
 driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
 #确认获取手机号码，IMEI,IMSI权限
+time.sleep(3)
 driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
 
 logging.info(driver.page_source)
 #输入手机号
+time.sleep(8)
 driver.find_element_by_id('com.kpt.android:id/phoneEdit').send_keys('9999990001')
 #点击登录
 driver.find_element_by_id('com.kpt.android:id/loginBtn').click()
@@ -107,18 +115,36 @@ code_list = list(code)
 print(code_list)
 
 #输入验证码
-time.sleep(10)
+time.sleep(3)
 
 driver.find_element_by_id('com.kpt.android:id/code1Edit').click()
 driver.press_keycode(int(code_list[0])+7)
 driver.press_keycode(int(code_list[1])+7)
 driver.press_keycode(int(code_list[2])+7)
 driver.press_keycode(int(code_list[3])+7)
-time.sleep(5)
+time.sleep(3)
 #点击登录
 driver.find_element_by_id('com.kpt.android:id/loginBtn').click()
 
+#设置手势密码，通过class_name获取view的list
+time.sleep(3)
+#list_pwd = driver.find_elements_by_id("com.kpt.android:id/mPassWordView")
+#print('list_pwd value is %s' %list_pwd)
+#TouchAction(driver).press(list_pwd[1]).move_to(list_pwd[4]).move_to(list_pwd[7]).wait(100).move_to(list_pwd[8]).release().perform()
+action = TouchAction(driver)
+start = driver.find_elements_by_id("com.kpt.android:id/mPassWordView")
+time.sleep(5)
+start_height = start.size['height']
+start_width = start.size['width']
+start_x = start.location['x']
+start_y = start.location['y']
+begin_x = start_x + start_width/2
+begin_y = start_y + start_height/2
+action.press(x=start_x, y=start_y).wait(100).move_to(x=start_x+start_width*2, y=begin_y).wait(100).move_to\
+                  (x=start_x+start_width*2, y=start_y+start_height*2).wait(100).move_t
+
 #退出
 driver.quit()
+
 
 
