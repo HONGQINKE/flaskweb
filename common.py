@@ -6,6 +6,8 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 import pymysql
 
+
+
 class Commone:
 
     #读取配置文件
@@ -32,10 +34,11 @@ class Commone:
 
 class BasePage:
 
-
+    @classmethod
     def __init__(self, driver):
         self.driver = driver
 
+    @classmethod
     def get_img(self):
         '''截图'''
         path = os.path.join(os.get_cwd(), 'screenshots/')  # 拼接截图保存路径
@@ -47,6 +50,7 @@ class BasePage:
         except BaseException:
             logging.error("截图失败", exc_info=1)
 
+    @classmethod
     def find_element(self, selector):
         '''定位元素'''
         by = selector[0]
@@ -80,6 +84,7 @@ class BasePage:
         else:
             logging.error('输入的元素定位方式错误')
 
+    @classmethod
     def type(self, selector, value):
         '''输入内容'''
         element = self.find_element(selector)
@@ -148,7 +153,7 @@ class BasePage:
         self.driver.get('http://sit-approve.qude369.com/#/user/login')
         #driver = BasePage(dr)
         self.type(['id', 'userName'], 'liuhong')
-        self.sleep(5)
+        #self.sleep(5)
         self.type(['id', 'password'], '123456.com')
         self.click(
             ['css', '#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button'])

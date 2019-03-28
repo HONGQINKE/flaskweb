@@ -86,13 +86,13 @@ time.sleep(5)
 
 #华硕手机
 #确认允许手机定位
-time.sleep(3)
+time.sleep(8)
 driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
 #确认允许录制照片和视频
-time.sleep(3)
+time.sleep(8)
 driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
 #确认获取手机号码，IMEI,IMSI权限
-time.sleep(3)
+time.sleep(8)
 driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_button').click()
 
 logging.info(driver.page_source)
@@ -125,7 +125,7 @@ driver.press_keycode(int(code_list[3])+7)
 time.sleep(3)
 #点击登录
 driver.find_element_by_id('com.kpt.android:id/loginBtn').click()
-
+'''
 #设置手势密码，通过class_name获取view的list
 time.sleep(3)
 #list_pwd = driver.find_elements_by_id("com.kpt.android:id/mPassWordView")
@@ -142,9 +142,10 @@ begin_x = start_x + start_width/2
 begin_y = start_y + start_height/2
 action.press(x=start_x, y=start_y).wait(100).move_to(x=start_x+start_width*2, y=begin_y).wait(100).move_to\
                   (x=start_x+start_width*2, y=start_y+start_height*2).wait(100).move_t
-
+'''
 #退出
 driver.quit()
+
 
 
 

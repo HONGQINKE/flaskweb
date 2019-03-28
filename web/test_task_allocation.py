@@ -4,19 +4,10 @@ from common import Commone,BasePage
 import logging
 import os
 
-# 定义浏览器及初始化信息
-dr = webdriver.Chrome()
-commone = Commone()
-basePage = BasePage(dr)
 
-#初始化数据
-id_number = commone.get_config_values('info', 'id_number')
 
-#保存运行日志
-commone.log()
-basePage.login()
+def task_allocation(basePage,id_number):
 
-def task_allocation():
     #点击Task Allocation
     basePage.click(['xpath','//*[@id="103$Menu"]/li[4]/a'])
     #输入身份证号码
@@ -45,12 +36,23 @@ def task_allocation():
 
 
 if __name__ == '__main__':
+    # 定义浏览器及初始化信息
+    dr = webdriver.Chrome()
+    commone = Commone()
+    basePage = BasePage(dr)
+
+    # 初始化数据
+    id_number = commone.get_config_values('info', 'id_number')
+
+    # 保存运行日志
+    commone.log()
+    basePage.login()
     # 点击Reviw
     basePage.sleep(5)
     basePage.click(['css', '#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span'])
     basePage.sleep(5)
     #任务分配
-    task_allocation()
+    task_allocation(basePage,id_number)
     #关闭浏览器
     basePage.quit()
 

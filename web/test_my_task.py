@@ -6,19 +6,8 @@ from selenium.webdriver.common.keys import Keys
 import logging
 import os
 
-# 定义浏览器及初始化信息
-dr = webdriver.Chrome()
-commone = Commone()
-basePage = BasePage(dr)
 
-#初始化数据
-id_number = commone.get_config_values('info', 'id_number')
-
-#保存运行日志
-commone.log()
-basePage.login()
-
-def my_task():
+def my_task(basePage,id_number,dr):
     # 点击My Task
     basePage.click(['xpath', '//*[@id="103$Menu"]/li[3]/a'])
     time.sleep(5)
@@ -52,14 +41,17 @@ def my_task():
     basePage.click(['css','#kptCheckOnline > label:nth-child(1) > span:nth-child(2)'])
     #输入Region信息
     basePage.type(['id','religion'],'regionA')
+    basePage.sleep(3)
     #输入婚姻状态
+    logging.info('[My Task] --start to input married status info--')
+    dr.find_element_by_css_selector('#maritalStatus > div > div > div').clear()
     basePage.click(['css','#maritalStatus > div > div > div'])
     WebDriverWait(dr, 30).until(lambda x: x.find_element_by_xpath('/html/body/div[4]').is_displayed())
     menu =dr.find_element_by_xpath('/html/body/div[4]').find_element_by_xpath("/html/body/div[4]//ul/li[2]")
     menu.click()
+    logging.info('[My Task] married status info input successfully')
     #滚动下拉到底部
-    js = "var q=document.documentElement.scrollTop=1000"
-    dr.execute_script(js)
+    basePage.scoll('1000')
     #选择身份证省市区
     basePage.click(['id','idProvince'])
     WebDriverWait(dr, 30).until(lambda x: x.find_element_by_xpath('/html/body/div[5]').is_displayed())
@@ -98,23 +90,35 @@ def my_task():
     menu = dr.find_element_by_id('noteCode')
     menu.click()
     #选择Approve Code
-    WebDriverWait(dr, 3000).until(lambda x: x.find_element_by_xpath('/html/body/div[5]').is_displayed())
+    WebDriverWait(dr, 30).until(lambda x: x.find_element_by_xpath('/html/body/div[5]').is_displayed())
     time.sleep(5)
     menu =dr.find_element_by_xpath('/html/body/div[5]').find_element_by_xpath("/html/body/div[5]//div/div/div/ul/li[1]")
     menu.click()
     #点击ok
+    time.sleep(5)
     basePage.click(['css','body > div:nth-child(8) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-footer > div > button.ant-btn.ant-btn-primary'])
     #确认ok
     basePage.click(['css','body > div:nth-child(11) > div > div.ant-modal-wrap > div > div.ant-modal-content > div > div > div.ant-modal-confirm-btns > button.ant-btn.ant-btn-primary'])
 
 
 if __name__ == '__main__':
+    # 定义浏览器及初始化信息
+    dr = webdriver.Chrome()
+    commone = Commone()
+    basePage = BasePage(dr)
+
+    # 初始化数据
+    id_number = commone.get_config_values('info', 'id_number')
+
+    # 保存运行日志
+    commone.log()
+    basePage.login()
     #点击Reviw
     basePage.sleep(5)
     basePage.click(['css','#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span'])
     basePage.sleep(5)
     #my task任务处理
-    my_task()
+    my_task(basePage,id_number,dr)
     #关闭浏览器
     basePage.quit()
 

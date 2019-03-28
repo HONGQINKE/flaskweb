@@ -1,19 +1,9 @@
 from selenium import webdriver
 from common import Commone,BasePage
 
-# 定义浏览器及初始化信息
-dr = webdriver.Chrome()
-commone = Commone()
-basePage = BasePage(dr)
 
-#初始化数据
-id_number = commone.get_config_values('info', 'id_number')
 
-#保存运行日志
-commone.log()
-basePage.login()
-
-def contract_info():
+def contract_info(basePage,id_number):
     #点击Final Reviw
     basePage.click(['xpath','//*[@id="102$Menu"]/li[1]/a'])
     #输入身份证号
@@ -29,12 +19,23 @@ def contract_info():
 
 
 if __name__ == '__main__':
+    # 定义浏览器及初始化信息
+    dr = webdriver.Chrome()
+    commone = Commone()
+    basePage = BasePage(dr)
+
+    # 初始化数据
+    id_number = commone.get_config_values('info', 'id_number')
+
+    # 保存运行日志
+    commone.log()
+    basePage.login()
     # 点击Account
     basePage.sleep(5)
     basePage.click(['css',
                     '#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(2) > div.ant-menu-submenu-title > span > span'])
     basePage.sleep(5)
     # fianl approve
-    contract_info()
+    contract_info(basePage,id_number)
     # 关闭浏览器
     #basePage.quit()

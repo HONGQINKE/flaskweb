@@ -1,19 +1,9 @@
 from selenium import webdriver
 from common import Commone,BasePage
 
-# 定义浏览器及初始化信息
-dr = webdriver.Chrome()
-commone = Commone()
-basePage = BasePage(dr)
 
-#初始化数据
-id_number = commone.get_config_values('info', 'id_number')
 
-#保存运行日志
-commone.log()
-basePage.login()
-
-def final_approve():
+def final_approve(basePage,id_number):
     #点击Final Reviw
     basePage.click(['xpath','//*[@id="103$Menu"]/li[1]/a'])
     #输入身份证号
@@ -37,6 +27,17 @@ def final_approve():
 
 
 if __name__ == '__main__':
+    # 定义浏览器及初始化信息
+    dr = webdriver.Chrome()
+    commone = Commone()
+    basePage = BasePage(dr)
+
+    # 初始化数据
+    id_number = commone.get_config_values('info', 'id_number')
+
+    # 保存运行日志
+    commone.log()
+    basePage.login()
     # 点击Reviw
     basePage.sleep(5)
     basePage.click(['css',
