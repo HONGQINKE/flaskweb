@@ -98,13 +98,13 @@ driver.find_element_by_id('com.android.packageinstaller:id/permission_allow_butt
 logging.info(driver.page_source)
 #输入手机号
 time.sleep(8)
-driver.find_element_by_id('com.kpt.android:id/phoneEdit').send_keys('9999990001')
+driver.find_element_by_id('com.kpt.android:id/phoneEdit').send_keys('10000001')
 #点击登录
 driver.find_element_by_id('com.kpt.android:id/loginBtn').click()
 
 #连接数据库获取数据库中验证码
 mysql = Mysql()
-sql = "select CODE from pub_verification_code where phone =9999990001 order by CREATE_TIME desc LIMIT 0,1"
+sql = "select CODE from pub_verification_code where phone =10000001 order by CREATE_TIME desc LIMIT 0,1"
 # 数据库查询结果，结果类型为Tuple
 data = mysql.fetchone(sql)
 # 提取元组中的验证码值
@@ -143,6 +143,12 @@ begin_y = start_y + start_height/2
 action.press(x=start_x, y=start_y).wait(100).move_to(x=start_x+start_width*2, y=begin_y).wait(100).move_to\
                   (x=start_x+start_width*2, y=start_y+start_height*2).wait(100).move_t
 '''
+#点击个人中心
+driver.find_element_by_id('com.kpt.android:id/settingTxt').click()
+#点击投标
+driver.find_element_by_id('com.kpt.android:id/investLayout').click()
+#加入购物车
+driver.f
 #退出
 driver.quit()
 

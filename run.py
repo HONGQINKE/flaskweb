@@ -4,11 +4,14 @@ from common import Commone,BasePage
 import logging
 import os
 import web.test_task_allocation,web.test_my_task,web.test_final_approve,web.test_contract_info
-
-
-
+from HTMLTestRunner import HTMLTestReportCN
+import unittest
+import os,time
+from datetime import datetime
 
 if __name__ == '__main__':
+    print('====AutoTest Start====')
+
     # 定义浏览器及初始化信息
     logging.info('--初始化浏览器--')
     dr = webdriver.Chrome()
@@ -37,14 +40,30 @@ if __name__ == '__main__':
     basePage.click(['css', '#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span'])
     basePage.sleep(5)
     logging.info('--Reviw模块点击成功--')
-    #任务分配
-    web.test_task_allocation.task_allocation(basePage,id_number)
-    #任务处理
-    web.test_my_task.my_task(basePage,id_number,dr)
-    #终审
-    web.test_final_approve.final_approve(basePage,id_number)
-    #确认放款
-    web.test_contract_info.contract_info(basePage,id_number)
-    #关闭浏览器
-    basePage.quit()
+
+    test_dir = './web'
+    test_report_dir = './report'
+
+    discover = unittest.defaultTestLoader.discover(test_dir, pattern='test_*')
+    now = datetime.now().strftime('%Y-%m-%d_%H_%M_%S_')
+    filename = test_report_dir + '/'\
+               + now + 'result.html'
+    fp = open(filename, 'wb')
+    runner = HTMLTestReportCN(stream=fp, title='KTP Test Report', description='Result')
+    runner.run(discover)
+    fp.close()
+
+    new_report = commone.new_file(test_report_dir)
+    print(new_report)
+
+    commone.send_email(new_report)
+
+    print('====AutoTest Over====')
+
+
+
+
+
+
+
 

@@ -5,6 +5,10 @@ from selenium import webdriver
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 import pymysql
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.header import Header
 
 
 
@@ -28,6 +32,48 @@ class Commone:
         formatter = logging.Formatter(log_format)
         console.setFormatter(formatter)
         logging.getLogger('').addHandler(console)
+
+    def new_file(self,test_dir):
+        lists = os.listdir(test_dir)
+        lists.sort(key=lambda fn: os.path.getmtime(test_dir + '/' + fn))
+        file_path = os.path.join(test_dir, lists[-1])
+        return file_path
+
+    def send_email(self,newfile):
+        f = open(newfile, 'rb')
+        mail_body = f.read()
+        f.close()
+
+        smtpserver = 'smtp.qq.com'
+        user = '815653824@qq.com'
+        password = 'ppzrtqqgiauabbff'
+        sender = '815653824@qq.com'
+        receiver = ['815653824@qq.com']
+        subject = 'Auto Test Report From Liuhong'
+
+        msg = MIMEMultipart('mixed')
+
+        msg_html1 = MIMEText(mail_body, 'html', 'utf-8')
+        msg.attach(msg_html1)
+        msg_html = MIMEText(mail_body, 'html', 'utf-8')
+        msg_html["Content-Disposition"] = 'attachment;filename="TestReport.html"'
+        msg.attach(msg_html)
+
+        msg['From'] = '815653824@qq.com'
+        msg['To'] = ";".join(receiver)
+        msg['Subject'] = Header(subject, 'utf-8')
+
+        # 连接发送邮件
+        try:
+            smtp = smtplib.SMTP_SSL()
+            smtp.connect(smtpserver, 465)
+            smtp.login(user, password)
+            smtp.sendmail(sender, receiver, msg.as_string())
+            smtp.quit()
+            return True
+            logging.info("Email send success")
+        except Exception:
+            logging.info('Email send failed ')
 
 
 
