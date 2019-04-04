@@ -2,42 +2,40 @@ import time
 from selenium import webdriver
 from common import Commone,BasePage
 import logging
-import os
 import unittest
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class task_allocation(unittest.TestCase):
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
         # 定义浏览器及初始化信息
-        self.dr = webdriver.Chrome()
+        cls.dr = webdriver.Chrome()
 
-        self.basePage = BasePage(self.dr)
-        self.commone = Commone()
-        # 初始化数据
-
+        cls.basePage = BasePage(cls.dr)
+        cls.commone = Commone()
+        cls.id_number = cls.commone.get_config_values('info', 'id_number')
 
         # 保存运行日志
-        self.commone.log()
-        self.basePage.login()
+        cls.commone.log()
+        cls.basePage.login()
         # 点击Reviw
-        self.basePage.sleep(5)
-        self.basePage.click(['css',
+        cls.basePage.sleep(5)
+        cls.basePage.click(['css',
                         '#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span'])
-        self.basePage.sleep(5)
+        cls.basePage.sleep(5)
 
-    def tearDown(self):
+    @classmethod
+    def tearDownClass(cls):
         # 关闭浏览器
-        self.basePage.quit()
+        cls.basePage.quit()
 
 
-    def test_task_allocation(self):
-        #初始化身份证数据
-        #commone = Commone()
-        id_number = self.commone.get_config_values('info', 'id_number')
+    def test_01_task_allocation_success(self):
         #点击Task Allocation
         self.basePage.click(['xpath','//*[@id="103$Menu"]/li[4]/a'])
         #输入身份证号码
-        self.basePage.type(['id','idNum'],id_number)
+        self.basePage.type(['id','idNum'],self.id_number)
         #点击查询
         time.sleep(5)
         self.basePage.click(['css','#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > div:nth-child(2) > div > button.ant-btn.ant-btn-primary'])
@@ -58,6 +56,7 @@ class task_allocation(unittest.TestCase):
         time.sleep(3)
         self.basePage.click(['css','body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary'])
         time.sleep(3)
+
 
 
 if __name__ == '__main__':
