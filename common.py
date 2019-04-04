@@ -87,7 +87,7 @@ class BasePage:
     @classmethod
     def get_img(self):
         '''截图'''
-        path = os.path.join(os.get_cwd(), 'screenshots/')  # 拼接截图保存路径
+        path = os.path.join(os.getcwd(), 'screenshots/')  # 拼接截图保存路径
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))  # 按格式获取当前时间
         screen_name = path + rq + '.png'  # 拼接截图文件名
         try:

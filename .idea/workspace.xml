@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3011de19-3134-45e5-9a54-c6e8be151e4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/test_02_my_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/liveappapi.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/liveappapi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/log/liveappapi.log" beforeDir="false" afterPath="$PROJECT_DIR$/web/log/liveappapi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test_my_task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test_task_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/test_01_task_allocation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test_01_task_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/test_01_task_allocation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +18,7 @@
     <SUITE FILE_PATH="coverage/flaskweb$manage.coverage" NAME="manage Coverage Results" MODIFIED="1547201853226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskweb$common.coverage" NAME="common Coverage Results" MODIFIED="1553479914975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskweb$test_final_approve.coverage" NAME="test_final_approve Coverage Results" MODIFIED="1553743987613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
-    <SUITE FILE_PATH="coverage/flaskweb$Unittests_in_test_01_task_allocation_py.coverage" NAME="Unittests in test_01_task_allocation.py Coverage Results" MODIFIED="1554349357617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+    <SUITE FILE_PATH="coverage/flaskweb$Unittests_in_test_01_task_allocation_py.coverage" NAME="Unittests in test_01_task_allocation.py Coverage Results" MODIFIED="1554351303952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/flaskweb$auth__1_.coverage" NAME="auth (1) Coverage Results" MODIFIED="1547608183941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskr" />
     <SUITE FILE_PATH="coverage/flaskweb$run.coverage" NAME="run Coverage Results" MODIFIED="1554344301090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_test$common.coverage" NAME="common Coverage Results" MODIFIED="1552751279118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -89,15 +86,15 @@
         <counts>
           <entry key="dummy" value="23" />
           <entry key="ini" value="109" />
-          <entry key="py" value="8189" />
-          <entry key="txt" value="171" />
+          <entry key="py" value="8191" />
+          <entry key="txt" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="109" />
-          <entry key="PLAIN_TEXT" value="194" />
-          <entry key="Python" value="8189" />
+          <entry key="PLAIN_TEXT" value="229" />
+          <entry key="Python" value="8191" />
         </counts>
       </usages-collector>
     </session>
@@ -116,15 +113,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/test_01_task_allocation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="126">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1554349948559" expanded="true" signature="893:928" ph="..." />
-                <marker date="1554349948559" expanded="true" signature="970:971" ph="..." />
+                <marker date="1554351299217" expanded="true" signature="893:928" ph="..." />
+                <marker date="1554351299217" expanded="true" signature="970:971" ph="..." />
               </folding>
             </state>
           </provider>
@@ -153,14 +150,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="2134">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1554277074747" expanded="true" signature="5249:5497" ph="..." />
+                <marker date="1554351276561" expanded="true" signature="5248:5496" ph="..." />
               </folding>
             </state>
           </provider>
@@ -241,12 +238,12 @@
         <option value="$PROJECT_DIR$/web/test_contract_info.py" />
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/app/first_apply.py" />
-        <option value="$PROJECT_DIR$/common.py" />
         <option value="$PROJECT_DIR$/web/test_task_allocation.py" />
         <option value="$PROJECT_DIR$/web/test_my_task.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/web/test_01_task_allocation.py" />
         <option value="$PROJECT_DIR$/web/test_02_my_task.py" />
+        <option value="$PROJECT_DIR$/common.py" />
+        <option value="$PROJECT_DIR$/web/test_01_task_allocation.py" />
       </list>
     </option>
   </component>
@@ -527,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554280748018</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="优化同一py文件下，不同用例会重复关闭浏览器问题">
+      <created>1554350686676</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554350686676</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -546,20 +550,22 @@
     <history-entry file="Unittests_in_test_01_task_allocation_py - 2019.04.04 at 11h 43m 41s.xml">
       <configuration name="Unittests in test_01_task_allocation.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_01_task_allocation_py - 2019.04.04 at 12h 16m 05s.xml">
+      <configuration name="Unittests in test_01_task_allocation.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="43447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7433155" visible="true" weight="0.14750378" />
       <window_info id="Structure" order="1" sideWeight="0.25668448" side_tool="true" weight="0.14220877" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6149773" visible="true" weight="0.036006548" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6149773" visible="true" weight="0.65302783" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69062024" weight="0.66775775" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,7 +621,8 @@
     <MESSAGE value="点击登陆" />
     <MESSAGE value="Run中可一次性运行所有模块&#10;Appium经常找不到设备号问题待修复" />
     <MESSAGE value="使用unittest框架生成HTML报表" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用unittest框架生成HTML报表" />
+    <MESSAGE value="优化同一py文件下，不同用例会重复关闭浏览器问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化同一py文件下，不同用例会重复关闭浏览器问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,17 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1554277074747" expanded="true" signature="5249:5497" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/log/liveappapi.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-724" />
@@ -828,12 +824,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/test_01_task_allocation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="126">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1554349948559" expanded="true" signature="893:928" ph="..." />
-            <marker date="1554349948559" expanded="true" signature="970:971" ph="..." />
+            <marker date="1554351299217" expanded="true" signature="893:928" ph="..." />
+            <marker date="1554351299217" expanded="true" signature="970:971" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2134">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1554351276561" expanded="true" signature="5248:5496" ph="..." />
           </folding>
         </state>
       </provider>

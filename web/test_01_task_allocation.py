@@ -56,6 +56,7 @@ class task_allocation(unittest.TestCase):
         time.sleep(3)
         self.basePage.click(['css','body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary'])
         time.sleep(3)
+        self.basePage.click(['css', 'body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary'])
 
 
 
