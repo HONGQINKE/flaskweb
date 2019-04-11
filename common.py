@@ -12,7 +12,6 @@ from email.header import Header
 import csv
 
 
-
 class Commone:
 
     #读取配置文件
