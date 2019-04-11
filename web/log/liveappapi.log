@@ -1,138 +1,143 @@
-[2019-04-04 12:15:07,829][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/window/current/size {"width": 1366, "height": 768, "windowHandle": "current", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:08,942][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/window/current/size HTTP/1.1" 200 72]
-[2019-04-04 12:15:08,943][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:08,943][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:08,944][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/timeouts/implicit_wait HTTP/1.1" 200 72]
-[2019-04-04 12:15:08,944][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:08,944][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/url {"url": "http://sit-approve.qude369.com/#/user/login", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,517][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/url HTTP/1.1" 200 72]
-[2019-04-04 12:15:18,517][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,517][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "id", "value": "userName", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,544][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:18,545][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,545][root][INFO][元素定位成功。定位方式：id，使用的值userName：]
-[2019-04-04 12:15:18,545][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-1/clear {"id": "0.10876323243213282-1", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,580][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-1/clear HTTP/1.1" 200 72]
-[2019-04-04 12:15:18,581][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,581][root][INFO][清空输入内容]
-[2019-04-04 12:15:18,581][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-1/value {"text": "liuhong", "value": ["l", "i", "u", "h", "o", "n", "g"], "id": "0.10876323243213282-1", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,673][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-1/value HTTP/1.1" 200 72]
-[2019-04-04 12:15:18,673][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,673][root][INFO][输入的内容：liuhong]
-[2019-04-04 12:15:18,674][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "id", "value": "password", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,690][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:18,691][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,691][root][INFO][元素定位成功。定位方式：id，使用的值password：]
-[2019-04-04 12:15:18,691][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-2/clear {"id": "0.10876323243213282-2", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,723][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-2/clear HTTP/1.1" 200 72]
-[2019-04-04 12:15:18,724][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,724][root][INFO][清空输入内容]
-[2019-04-04 12:15:18,725][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-2/value {"text": "123456.com", "value": ["1", "2", "3", "4", "5", "6", ".", "c", "o", "m"], "id": "0.10876323243213282-2", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,839][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-2/value HTTP/1.1" 200 72]
-[2019-04-04 12:15:18,839][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,839][root][INFO][输入的内容：123456.com]
-[2019-04-04 12:15:18,840][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,857][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:18,858][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,858][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button：]
-[2019-04-04 12:15:18,858][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-3/click {"id": "0.10876323243213282-3", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:18,946][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-3/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:18,947][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:18,948][root][INFO][点击元素成功]
-[2019-04-04 12:15:23,948][root][INFO][暂停5秒]
-[2019-04-04 12:15:23,948][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:23,963][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:23,963][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:23,963][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span：]
-[2019-04-04 12:15:23,963][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-4/click {"id": "0.10876323243213282-4", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:24,044][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-4/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:24,044][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:24,044][root][INFO][点击元素成功]
-[2019-04-04 12:15:29,044][root][INFO][暂停5秒]
-[2019-04-04 12:15:29,045][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "xpath", "value": "//*[@id=\"103$Menu\"]/li[4]/a", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:29,061][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:29,062][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:29,062][root][INFO][元素定位成功。定位方式：xpath，使用的值//*[@id="103$Menu"]/li[4]/a：]
-[2019-04-04 12:15:29,062][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-5/click {"id": "0.10876323243213282-5", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:29,142][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-5/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:29,142][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:29,143][root][INFO][点击元素成功]
-[2019-04-04 12:15:29,144][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "id", "value": "idNum", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:29,846][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:29,847][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:29,847][root][INFO][元素定位成功。定位方式：id，使用的值idNum：]
-[2019-04-04 12:15:29,848][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-6/clear {"id": "0.10876323243213282-6", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:29,961][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-6/clear HTTP/1.1" 200 72]
-[2019-04-04 12:15:29,962][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:29,963][root][INFO][清空输入内容]
-[2019-04-04 12:15:29,963][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-6/value {"text": "4886970512883659", "value": ["4", "8", "8", "6", "9", "7", "0", "5", "1", "2", "8", "8", "3", "6", "5", "9"], "id": "0.10876323243213282-6", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:30,595][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-6/value HTTP/1.1" 200 72]
-[2019-04-04 12:15:30,595][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:30,596][root][INFO][输入的内容：4886970512883659]
-[2019-04-04 12:15:35,597][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > div:nth-child(2) > div > button.ant-btn.ant-btn-primary", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:35,611][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:35,611][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:35,612][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > div:nth-child(2) > div > button.ant-btn.ant-btn-primary：]
-[2019-04-04 12:15:35,612][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-7/click {"id": "0.10876323243213282-7", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:35,761][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-7/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:35,762][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:35,762][root][INFO][点击元素成功]
-[2019-04-04 12:15:40,762][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > div.ant-table-wrapper.tableGrid > div > div > div > div > div > table > tbody > tr > td:nth-child(13) > button", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:40,776][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:40,777][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:40,777][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > div.ant-table-wrapper.tableGrid > div > div > div > div > div > table > tbody > tr > td:nth-child(13) > button：]
-[2019-04-04 12:15:40,777][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-8/click {"id": "0.10876323243213282-8", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:40,922][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-8/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:40,923][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:40,923][root][INFO][点击元素成功]
-[2019-04-04 12:15:45,923][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "id", "value": "name", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:45,939][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 103]
-[2019-04-04 12:15:45,939][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:45,939][root][INFO][元素定位成功。定位方式：id，使用的值name：]
-[2019-04-04 12:15:45,940][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-9/clear {"id": "0.10876323243213282-9", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:45,968][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-9/clear HTTP/1.1" 200 72]
-[2019-04-04 12:15:45,968][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:45,969][root][INFO][清空输入内容]
-[2019-04-04 12:15:45,969][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-9/value {"text": "liuhong", "value": ["l", "i", "u", "h", "o", "n", "g"], "id": "0.10876323243213282-9", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:46,262][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-9/value HTTP/1.1" 200 72]
-[2019-04-04 12:15:46,262][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:46,263][root][INFO][输入的内容：liuhong]
-[2019-04-04 12:15:46,263][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > form > div > div.ant-col-6 > button", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:46,278][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 104]
-[2019-04-04 12:15:46,279][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:46,280][root][INFO][元素定位成功。定位方式：css，使用的值body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > form > div > div.ant-col-6 > button：]
-[2019-04-04 12:15:46,280][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-10/click {"id": "0.10876323243213282-10", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:46,356][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-10/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:46,357][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:46,358][root][INFO][点击元素成功]
-[2019-04-04 12:15:51,359][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > div > div > div > div > div > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > label > span > input", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:51,374][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 104]
-[2019-04-04 12:15:51,374][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:51,375][root][INFO][元素定位成功。定位方式：css，使用的值body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > div > div > div > div > div > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > label > span > input：]
-[2019-04-04 12:15:51,375][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-11/click {"id": "0.10876323243213282-11", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:51,462][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-11/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:51,462][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:51,463][root][INFO][点击元素成功]
-[2019-04-04 12:15:51,463][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-footer > div > button.ant-btn.ant-btn-primary", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:51,506][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 104]
-[2019-04-04 12:15:51,507][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:51,507][root][INFO][元素定位成功。定位方式：css，使用的值body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-footer > div > button.ant-btn.ant-btn-primary：]
-[2019-04-04 12:15:51,507][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-12/click {"id": "0.10876323243213282-12", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:51,595][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-12/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:51,596][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:51,597][root][INFO][点击元素成功]
-[2019-04-04 12:15:54,597][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:54,611][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 104]
-[2019-04-04 12:15:54,612][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:54,612][root][INFO][元素定位成功。定位方式：css，使用的值body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary：]
-[2019-04-04 12:15:54,612][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-13/click {"id": "0.10876323243213282-13", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:15:54,671][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element/0.10876323243213282-13/click HTTP/1.1" 200 72]
-[2019-04-04 12:15:54,671][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:15:54,672][root][INFO][点击元素成功]
-[2019-04-04 12:15:57,672][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/element {"using": "css selector", "value": "body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary", "sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:16:02,729][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "POST /session/76dea0156240faa6cc74a8114389aa03/element HTTP/1.1" 200 410]
-[2019-04-04 12:16:02,730][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:16:02,731][root][ERROR][报错信息：]
+[2019-04-11 15:55:16,957][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/window/current/size {"width": 1366, "height": 768, "windowHandle": "current", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:18,077][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/window/current/size HTTP/1.1" 200 72]
+[2019-04-11 15:55:18,083][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:18,083][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/timeouts/implicit_wait {"ms": 5000.0, "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:18,085][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/timeouts/implicit_wait HTTP/1.1" 200 72]
+[2019-04-11 15:55:18,085][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:18,085][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/url {"url": "http://sit-approve.qude369.com/#/user/login", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:19,946][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/url HTTP/1.1" 200 72]
+[2019-04-11 15:55:19,948][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:19,948][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "id", "value": "userName", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:19,970][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:19,971][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:19,971][root][INFO][元素定位成功。定位方式：id，使用的值userName：]
+[2019-04-11 15:55:19,972][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-1/clear {"id": "0.8308590271830787-1", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,008][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-1/clear HTTP/1.1" 200 72]
+[2019-04-11 15:55:20,008][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,008][root][INFO][清空输入内容]
+[2019-04-11 15:55:20,009][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-1/value {"text": "liuhong", "value": ["l", "i", "u", "h", "o", "n", "g"], "id": "0.8308590271830787-1", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,112][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-1/value HTTP/1.1" 200 72]
+[2019-04-11 15:55:20,113][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,113][root][INFO][输入的内容：liuhong]
+[2019-04-11 15:55:20,113][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "id", "value": "password", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,127][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:20,128][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,128][root][INFO][元素定位成功。定位方式：id，使用的值password：]
+[2019-04-11 15:55:20,128][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-2/clear {"id": "0.8308590271830787-2", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,161][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-2/clear HTTP/1.1" 200 72]
+[2019-04-11 15:55:20,162][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,162][root][INFO][清空输入内容]
+[2019-04-11 15:55:20,163][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-2/value {"text": "123456.com", "value": ["1", "2", "3", "4", "5", "6", ".", "c", "o", "m"], "id": "0.8308590271830787-2", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,271][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-2/value HTTP/1.1" 200 72]
+[2019-04-11 15:55:20,272][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,272][root][INFO][输入的内容：123456.com]
+[2019-04-11 15:55:20,272][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,287][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:20,287][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,287][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > button：]
+[2019-04-11 15:55:20,287][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-3/click {"id": "0.8308590271830787-3", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:20,365][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-3/click HTTP/1.1" 200 72]
+[2019-04-11 15:55:20,366][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:20,367][root][INFO][点击元素成功]
+[2019-04-11 15:55:25,368][root][INFO][暂停5秒]
+[2019-04-11 15:55:25,368][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:25,386][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:25,387][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:25,387][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger > div.ant-layout-sider-children > ul > li:nth-child(1) > div > span > span：]
+[2019-04-11 15:55:25,387][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-4/click {"id": "0.8308590271830787-4", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:25,464][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-4/click HTTP/1.1" 200 72]
+[2019-04-11 15:55:25,464][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:25,465][root][INFO][点击元素成功]
+[2019-04-11 15:55:30,465][root][INFO][暂停5秒]
+[2019-04-11 15:55:30,466][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "xpath", "value": "//*[@id=\"103$Menu\"]/li[4]/a", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:30,512][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:30,513][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:30,513][root][INFO][元素定位成功。定位方式：xpath，使用的值//*[@id="103$Menu"]/li[4]/a：]
+[2019-04-11 15:55:30,513][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-5/click {"id": "0.8308590271830787-5", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:30,625][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-5/click HTTP/1.1" 200 72]
+[2019-04-11 15:55:30,626][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:30,626][root][INFO][点击元素成功]
+[2019-04-11 15:55:30,627][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "id", "value": "idNum", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:31,254][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:31,255][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:31,255][root][INFO][元素定位成功。定位方式：id，使用的值idNum：]
+[2019-04-11 15:55:31,255][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-6/clear {"id": "0.8308590271830787-6", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:31,344][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-6/clear HTTP/1.1" 200 72]
+[2019-04-11 15:55:31,345][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:31,345][root][INFO][清空输入内容]
+[2019-04-11 15:55:31,345][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-6/value {"text": "4886970512883659", "value": ["4", "8", "8", "6", "9", "7", "0", "5", "1", "2", "8", "8", "3", "6", "5", "9"], "id": "0.8308590271830787-6", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:32,022][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-6/value HTTP/1.1" 200 72]
+[2019-04-11 15:55:32,023][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:32,024][root][INFO][输入的内容：4886970512883659]
+[2019-04-11 15:55:37,025][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > div:nth-child(2) > div > button.ant-btn.ant-btn-primary", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:37,039][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:37,040][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:37,040][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > form > div:nth-child(2) > div > button.ant-btn.ant-btn-primary：]
+[2019-04-11 15:55:37,040][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-7/click {"id": "0.8308590271830787-7", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:37,156][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-7/click HTTP/1.1" 200 72]
+[2019-04-11 15:55:37,156][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:37,157][root][INFO][点击元素成功]
+[2019-04-11 15:55:42,157][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > div.ant-table-wrapper.tableGrid > div > div > div > div > div > table > tbody > tr > td:nth-child(13) > button", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:42,171][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:42,172][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:42,172][root][INFO][元素定位成功。定位方式：css，使用的值#app > div > div.ant-layout > div.mainContent.ant-layout-content > div > div > div.ant-table-wrapper.tableGrid > div > div > div > div > div > table > tbody > tr > td:nth-child(13) > button：]
+[2019-04-11 15:55:42,173][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-8/click {"id": "0.8308590271830787-8", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:42,317][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-8/click HTTP/1.1" 200 72]
+[2019-04-11 15:55:42,318][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:42,319][root][INFO][点击元素成功]
+[2019-04-11 15:55:47,320][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "id", "value": "name", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:47,334][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 102]
+[2019-04-11 15:55:47,335][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:47,335][root][INFO][元素定位成功。定位方式：id，使用的值name：]
+[2019-04-11 15:55:47,335][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-9/clear {"id": "0.8308590271830787-9", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:47,368][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-9/clear HTTP/1.1" 200 72]
+[2019-04-11 15:55:47,369][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:47,369][root][INFO][清空输入内容]
+[2019-04-11 15:55:47,369][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-9/value {"text": "liuhong", "value": ["l", "i", "u", "h", "o", "n", "g"], "id": "0.8308590271830787-9", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:47,545][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element/0.8308590271830787-9/value HTTP/1.1" 200 72]
+[2019-04-11 15:55:47,546][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:47,546][root][INFO][输入的内容：liuhong]
+[2019-04-11 15:55:47,546][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > form > div > div.ant-col-6 > button", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:49,733][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 72]
+[2019-04-11 15:55:49,734][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:49,734][root][INFO][元素定位成功。定位方式：css，使用的值body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > form > div > div.ant-col-6 > button：]
+[2019-04-11 15:55:49,734][root][ERROR][点击元素报错]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+[2019-04-11 15:55:49,735][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:55:53,734][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:55:53,735][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:55:53,735][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:55:58,738][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-body > div > div > div > div > div > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1) > label > span > input", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:02,741][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 270]
+[2019-04-11 15:56:02,742][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:02,742][root][ERROR][报错信息：]
 Traceback (most recent call last):
   File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
     element = self.driver.find_element_by_css_selector(value)
@@ -144,24 +149,356 @@ Traceback (most recent call last):
     self.error_handler.check_response(response)
   File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary"}
-  (Session info: chrome=73.0.3683.86)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
   (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
 
-[2019-04-04 12:16:02,733][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/screenshot {"sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:16:03,063][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "GET /session/76dea0156240faa6cc74a8114389aa03/screenshot HTTP/1.1" 200 89202]
-[2019-04-04 12:16:03,064][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:16:03,065][root][INFO][截图保存成功]
-[2019-04-04 12:16:03,065][root][ERROR][点击元素报错]
+[2019-04-11 15:56:02,743][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:06,750][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:56:06,750][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:06,750][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:06,752][root][ERROR][点击元素报错]
 Traceback (most recent call last):
   File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
     element.click()
 AttributeError: 'NoneType' object has no attribute 'click'
-[2019-04-04 12:16:03,066][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03/screenshot {"sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:16:03,355][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "GET /session/76dea0156240faa6cc74a8114389aa03/screenshot HTTP/1.1" 200 89202]
-[2019-04-04 12:16:03,356][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:16:03,356][root][INFO][截图保存成功]
-[2019-04-04 12:16:03,357][selenium.webdriver.remote.remote_connection][DEBUG][DELETE http://127.0.0.1:52830/session/76dea0156240faa6cc74a8114389aa03 {"sessionId": "76dea0156240faa6cc74a8114389aa03"}]
-[2019-04-04 12:16:03,390][urllib3.connectionpool][DEBUG][http://127.0.0.1:52830 "DELETE /session/76dea0156240faa6cc74a8114389aa03 HTTP/1.1" 200 72]
-[2019-04-04 12:16:03,391][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
-[2019-04-04 12:16:05,487][root][INFO][关闭浏览器]
+[2019-04-11 15:56:06,760][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:12,766][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:56:12,766][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:12,767][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:12,768][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "body > div:nth-child(7) > div > div.ant-modal-wrap > div > div.ant-modal-content > div.ant-modal-footer > div > button.ant-btn.ant-btn-primary", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:18,774][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 270]
+[2019-04-11 15:56:18,774][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:18,775][root][ERROR][报错信息：]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:18,776][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:22,776][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:56:22,777][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:22,777][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:22,779][root][ERROR][点击元素报错]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+[2019-04-11 15:56:22,781][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:28,788][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:56:28,788][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:28,789][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:31,791][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:37,801][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 270]
+[2019-04-11 15:56:37,802][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:37,802][root][ERROR][报错信息：]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:37,804][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:43,815][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:56:43,815][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:43,816][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:43,817][root][ERROR][点击元素报错]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+[2019-04-11 15:56:43,819][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:47,818][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:56:47,818][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:47,819][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:50,820][selenium.webdriver.remote.remote_connection][DEBUG][POST http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/element {"using": "css selector", "value": "body div.ant-modal-confirm .ant-modal-body button.ant-btn.ant-btn-primary", "sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:56:54,823][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "POST /session/b634637c64de4f803a9cb11d09cf1b11/element HTTP/1.1" 200 270]
+[2019-04-11 15:56:54,823][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:56:54,824][root][ERROR][报错信息：]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:56:54,825][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:57:00,831][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:57:00,832][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:57:00,832][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 120, in find_element
+    element = self.driver.find_element_by_css_selector(value)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 598, in find_element_by_css_selector
+    return self.find_element(by=By.CSS_SELECTOR, value=css_selector)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:57:00,834][root][ERROR][点击元素报错]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+[2019-04-11 15:57:00,834][selenium.webdriver.remote.remote_connection][DEBUG][GET http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11/screenshot {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:57:06,844][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "GET /session/b634637c64de4f803a9cb11d09cf1b11/screenshot HTTP/1.1" 200 270]
+[2019-04-11 15:57:06,845][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:57:06,845][root][ERROR][截图失败]
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 150, in click
+    element.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\InterfaceTest\flaskweb\common.py", line 94, in get_img
+    self.driver.get_screenshot_as_file(screen_name)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Program Files\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64)
+
+[2019-04-11 15:57:06,846][selenium.webdriver.remote.remote_connection][DEBUG][DELETE http://127.0.0.1:60741/session/b634637c64de4f803a9cb11d09cf1b11 {"sessionId": "b634637c64de4f803a9cb11d09cf1b11"}]
+[2019-04-11 15:57:06,848][urllib3.connectionpool][DEBUG][http://127.0.0.1:60741 "DELETE /session/b634637c64de4f803a9cb11d09cf1b11 HTTP/1.1" 200 72]
+[2019-04-11 15:57:06,848][selenium.webdriver.remote.remote_connection][DEBUG][Finished Request]
+[2019-04-11 15:57:08,934][root][INFO][关闭浏览器]

@@ -9,6 +9,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
+import csv
 
 
 
@@ -32,6 +33,14 @@ class Commone:
         formatter = logging.Formatter(log_format)
         console.setFormatter(formatter)
         logging.getLogger('').addHandler(console)
+
+    def read_from_csv(self):
+        f = open('E:\\InterfaceTest\\python-InterfaceTest\\abc.csv', 'r')
+        csv_file = csv.reader(f)
+        logging.info(csv_file)
+        for data in csv_file:
+            return data
+        f.close()
 
     def new_file(self,test_dir):
         lists = os.listdir(test_dir)
@@ -222,11 +231,6 @@ class BasePage:
 class Mysql:
 
     commone = Commone()
-
-
-
-
-
 
     def __init__(self):
         pass
