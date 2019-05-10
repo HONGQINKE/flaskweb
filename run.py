@@ -4,7 +4,7 @@ from common import Commone,BasePage
 import logging
 import os
 import web.test_01_task_allocation,web.test_02_my_task,web.test_final_approve,web.test_contract_info
-from HTMLTestRunner import HTMLTestReportCN
+import HTMLTestRunner
 import unittest
 import os,time
 from datetime import datetime
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     filename = test_report_dir + '/'\
                + now + 'result.html'
     fp = open(filename, 'wb')
-    runner = HTMLTestReportCN(stream=fp, title='KTP Test Report', description='Result')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='KTP Test Report **', description='Result')
     runner.run(discover)
     fp.close()
 
