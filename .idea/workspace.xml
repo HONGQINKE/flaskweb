@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3011de19-3134-45e5-9a54-c6e8be151e4e" name="Default Changelist" comment="优化同一py文件下，不同用例会重复关闭浏览器问题">
+    <list default="true" id="3011de19-3134-45e5-9a54-c6e8be151e4e" name="Default Changelist" comment="test">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flaskweb.iml" afterPath="$PROJECT_DIR$/.idea/flaskweb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/liveappapi.log" afterPath="$PROJECT_DIR$/log/liveappapi.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -710,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554372763413</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test">
+      <created>1557450695564</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1557450695564</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -789,7 +792,8 @@
     <MESSAGE value="Run中可一次性运行所有模块&#10;Appium经常找不到设备号问题待修复" />
     <MESSAGE value="使用unittest框架生成HTML报表" />
     <MESSAGE value="优化同一py文件下，不同用例会重复关闭浏览器问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化同一py文件下，不同用例会重复关闭浏览器问题" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
