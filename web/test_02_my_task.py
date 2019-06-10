@@ -4,6 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from common import Commone,BasePage
 import logging
 import unittest
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.options import Options
 
 
 class my_task(unittest.TestCase):
@@ -11,6 +13,10 @@ class my_task(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # 定义浏览器及初始化信息
+        #cls.chrome_options = Options()
+        #cls.chrome_options.add_argument('--headless')
+
+        #cls.dr = webdriver.Chrome(chrome_options=cls.chrome_options)
         cls.dr = webdriver.Chrome()
 
         cls.basePage = BasePage(cls.dr)
